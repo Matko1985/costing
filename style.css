@@ -47,12 +47,13 @@ nav a:hover {
 .hero-content h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  color: var(--text-dark); /* tmavší text */
+  color: var(--text-dark); /* tmavý nadpis */
 }
 
 .hero-content p {
   font-size: 1.2em;
   margin-bottom: 20px;
+  color: var(--text-dark)
 }
 
 .btn {
