@@ -1,1 +1,18 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>O mne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Domov</a>
+    <a href="about.html">O mne</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
+  <h1>O mne</h1>
+  <p>Tu môžeš napísať niečo o sebe, napríklad tvoje projekty alebo skúsenosti.</p>
+</body>
+</html>
 
