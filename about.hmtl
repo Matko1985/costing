@@ -2,17 +2,24 @@
 <html lang="sk">
 <head>
   <meta charset="UTF-8">
-  <title>O mne</title>
+  <title>O mne – Costing</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="index.html">Domov</a>
-    <a href="about.html">O mne</a>
-    <a href="contact.html">Kontakt</a>
-  </nav>
-  <h1>O mne</h1>
-  <p>Som stavebný cenár, tvorím orientačné rozpočty a kalkulácie v programe Cenkros 4.</p>
+  <header class="header">
+    <img src="images/costing logo.jpg" alt="Costing logo" class="logo">
+    <nav>
+      <a href="index.html">Domov</a>
+      <a href="about.html">O mne</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about">
+      <h1>O mne</h1>
+      <p>Volám sa Matúš a venujem sa technickému poradenstvu a rozpočtom pre stavebné projekty v Košiciach a okolí.</p>
+    </section>
+  </main>
 </body>
 </html>
-
