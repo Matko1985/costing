@@ -67,4 +67,15 @@ nav a:hover {
 
 .btn:hover {
   background-color: #d35400;
+  .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  height: 60px; /* primeraná výška loga */
+  width: auto;
 }
