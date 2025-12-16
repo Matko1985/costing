@@ -1,19 +1,26 @@
-# Costing – Osobná webová stránka
+# Costing.sk — GitHub Pages
 
-Toto je jednoduchá webová vizitka vytvorená pomocou HTML a CSS, hostovaná cez GitHub Pages.
+Moderná, responzívna stránka pre odhad nákladov v stavebníctve.
 
-## Obsah
-- `index.html` – hlavná stránka
-- `about.html` – informácie o mne
-- `contact.html` – kontaktné údaje
-- `style.css` – štýlovanie stránky
-- `CNAME` – vlastná doména: www.costing.sk
-
-## Cieľ
-Prezentovať moje služby v oblasti stavebných rozpočtov a technického poradenstva.
+## Súbory
+- `index.html` — hlavná stránka (one‑page)
+- `style.css` — štýly
+- `images/` — sem vložte vlastné obrázky (`hero.jpg`, `about.jpg`, `favicon.png`)
 
 ## Nasadenie
-Stránka je dostupná na: [www.costing.sk](http://www.costing.sk)
+1. Nahrajte súbory do `main` branch na GitHube.
+2. V `Settings → Pages` nastavte zdroj `Deploy from a branch` → `main` → `/ (root)`.
+3. V `CNAME` súbore ponechajte `www.costing.sk` (alebo zmeňte na `costing.sk` podľa preferencie).
+4. V DNS:
+   - A záznamy root domény na GitHub IP: 185.199.108.153 / .109.153 / .110.153 / .111.153
+   - CNAME `www` → `matko1985.github.io`
+5. Po propagácii zapnite **Enforce HTTPS** v `Settings → Pages`.
 
-## Autor
-Matúš – technický konzultant a rozpočtár z Košíc
+## Kontakt formulár
+- Ak chcete, aby formulár odosielal emaily, zmeňte `action="#"` na URL poskytovateľa formulárov (alebo použite vlastný backend).
+- Pridajte texty GDPR podľa potreby.
+
+## Úpravy
+- Farby a CTA zmeníte v `:root` premenných v `style.css`.
+- Obrázky nahraďte vlastnými v priečinku `images/`.
+- Sekcie upravte priamo v `index.html`.
