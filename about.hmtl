@@ -1,25 +1,44 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <title>O mne – Costing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O mne — Costing.sk</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="header">
-    <img src="images/costing logo.jpg" alt="Costing logo" class="logo">
-    <nav>
-      <a href="index.html">Domov</a>
-      <a href="about.html">O mne</a>
-      <a href="contact.html">Kontakt</a>
-    </nav>
+    <div class="container nav">
+      <a href="index.html" class="logo">Costing<span>.sk</span></a>
+      <nav class="menu">
+        <a href="index.html#sluzby">Služby</a>
+        <a href="index.html#referencie">Referencie</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="contact.html" class="btn btn--small">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="about">
-      <h1>O mne</h1>
-      <p>Volám sa Matúš Krivda a venujem sa tvorbe orientačných rozpočtov a kalkulácií v programe Cenkros 4.</p>
-    </section>
-  </main>
+  <section class="section section--alt">
+    <div class="container about">
+      <div class="about__text">
+        <h1>O mne</h1>
+        <p>Som nezávislý odhadca nákladov so zameraním na technickú presnosť, jasnú komunikáciu a rýchle dodanie. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
+        <ul class="about__bullets">
+          <li>Expertíza: položkové rozpočty, PD podklady, technická dokumentácia</li>
+          <li>Prístup: transparentné kalkulácie a konzultácie</li>
+          <li>Lokalita: Košice a okolie, možná celoslovenská spolupráca</li>
+        </ul>
+      </div>
+      <div class="about__visual"></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Costing.sk</p>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+  </footer>
 </body>
 </html>
