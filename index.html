@@ -1,24 +1,268 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="UTF-8">
-  <title>Costing – Stavebné rozpočty</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Costing.sk — Rýchly a presný odhad nákladov</title>
+  <meta name="description" content="Profesionálny odhad nákladov v stavebníctve. Express rozpočty, konzultácie a podpora pre projektantov, stavebné firmy a vodohospodárske projekty." />
+  <meta name="author" content="Costing.sk" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/favicon.png" />
 </head>
 <body>
-  <header class="hero">
-    <img src="images/costing logo.jpg" alt="Costing logo" class="logo">
-    <nav>
-      <a href="index.html">Domov</a>
-      <a href="about.html">O mne</a>
-      <a href="contact.html">Kontakt</a>
-    </nav>
-    <div class="hero-content">
-      <h1>Presné rozpočty pre vaše projekty</h1>
-      <p>Technické poradenstvo a expresné kalkulácie pre Košice a okolie</p>
-      <a href="contact.html" class="btn">Kontaktujte ma</a>
+  <!-- Sticky navigation -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">Costing<span>.sk</span></a>
+      <nav class="menu" aria-label="Hlavné menu">
+        <a href="#sluzby">Služby</a>
+        <a href="#o-mne">O mne</a>
+        <a href="#referencie">Referencie</a>
+        <a href="#blog">Blog</a>
+        <a href="#kontakt" class="btn btn--small">Kontakt</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Otvoriť menu">☰</button>
     </div>
   </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__content">
+      <div class="hero__text">
+        <h1>Rýchly a presný odhad nákladov pre vaše stavebné projekty</h1>
+        <p>Express rozpočty, konzultácie a technická podpora. Špecializácia na vodohospodárske stavby a spoluprácu s projektantmi a stavebnými firmami v Košiciach a okolí.</p>
+        <div class="hero__cta">
+          <a href="#kontakt" class="btn">Získať odhad</a>
+          <a href="#sluzby" class="btn btn--ghost">Pozrieť služby</a>
+        </div>
+      </div>
+      <div class="hero__visual" role="img" aria-label="Ilustrácia stavebného projektu">
+        <!-- Replace with your image: images/hero.jpg -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="trust">
+    <div class="container trust__grid">
+      <div class="trust__item">
+        <span class="icon">⏱️</span>
+        <p><strong>Express odhady</strong> do 24–48 hodín</p>
+      </div>
+      <div class="trust__item">
+        <span class="icon">📐</span>
+        <p><strong>Technická presnosť</strong> a dokumentácia</p>
+      </div>
+      <div class="trust__item">
+        <span class="icon">🔒</span>
+        <p><strong>Dôvera</strong> a transparentnosť</p>
+      </div>
+      <div class="trust__item">
+        <span class="icon">🌊</span>
+        <p><strong>Vodohospodárske</strong> projekty</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="sluzby" class="section">
+    <div class="container">
+      <h2>Služby</h2>
+      <p class="section__lead">Komplexný odhad nákladov od štúdie po realizačný projekt. Pre projektantov, investorov a stavebné firmy.</p>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card__icon">🧮</div>
+          <h3>Rozpočty pre projektantov</h3>
+          <p>Presné položkové rozpočty, harmonogramy a podklady pre PD. Zohľadnenie lokálnych cenníkov a reálnych trhových cien.</p>
+          <ul class="card__list">
+            <li><strong>Výstup:</strong> XLSX, PDF</li>
+            <li><strong>Termín:</strong> štandardne 3–5 dní</li>
+            <li><strong>Konzultácie:</strong> online/na mieste</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">🌊</div>
+          <h3>Vodohospodárske stavby</h3>
+          <p>Špecifické položky, technológie a materiály pre kanalizácie, vodovody, ČOV, retenčné nádrže a odvodňovacie systémy.</p>
+          <ul class="card__list">
+            <li><strong>Výstup:</strong> položkový rozpočet</li>
+            <li><strong>Riziká:</strong> analýza citlivosti</li>
+            <li><strong>Varianty:</strong> porovnanie riešení</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__icon">⚙️</div>
+          <h3>Konzultácie a kontrola</h3>
+          <p>Revízia nacenení, nezávislé druhé stanovisko, optimalizácie a porovnanie dodávateľských ponúk.</p>
+          <ul class="card__list">
+            <li><strong>Forma:</strong> hodinová/flat fee</li>
+            <li><strong>Výsledok:</strong> správa s odporúčaniami</li>
+            <li><strong>Prínos:</strong> zníženie rizika a nákladov</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="o-mne" class="section section--alt">
+    <div class="container about">
+      <div class="about__text">
+        <h2>O mne</h2>
+        <p>Som nezávislý odhadca nákladov so zameraním na technickú presnosť, jasnú komunikáciu a rýchle dodanie. Mám skúsenosti s diagnostikou, plánovaním opráv a tvorbou technickej dokumentácie. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
+        <ul class="about__bullets">
+          <li><strong>Expertíza:</strong> položkové rozpočty, PD podklady, technická dokumentácia</li>
+          <li><strong>Prístup:</strong> transparentné kalkulácie a konzultácie</li>
+          <li><strong>Lokalita:</strong> Košice a okolie, možná celoslovenská spolupráca</li>
+        </ul>
+        <a href="#kontakt" class="btn">Dohodnúť konzultáciu</a>
+      </div>
+      <div class="about__visual" role="img" aria-label="Technické výkresy a plánovanie">
+        <!-- Replace with your image: images/about.jpg -->
+      </div>
+    </div>
+  </section>
+
+  <!-- References -->
+  <section id="referencie" class="section">
+    <div class="container">
+      <h2>Referencie</h2>
+      <p class="section__lead">Vybrané ukážky projektov. Údaje sú anonymizované z dôvodu ochrany klientov.</p>
+
+      <div class="refs">
+        <article class="ref">
+          <h3>Kanalizačný zberač (2024)</h3>
+          <p><strong>Rozsah:</strong> 1,2 km potrubia, 6 šácht, napojenie na ČOV.</p>
+          <p><strong>Výstup:</strong> položkový rozpočet + variantné riešenia.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Rekonštrukcia vodovodu (2023)</h3>
+          <p><strong>Rozsah:</strong> výmena potrubia a armatúr, koordinácia s dopravou.</p>
+          <p><strong>Prínos:</strong> optimalizácia nákladov o 8 % proti pôvodným odhadom.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Retenčná nádrž (2022)</h3>
+          <p><strong>Rozsah:</strong> projekt pre realizáciu, geotechnika, odvodnenie.</p>
+          <p><strong>Výstup:</strong> rozpočet + harmonogram realizácie.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog -->
+  <section id="blog" class="section section--alt">
+    <div class="container">
+      <h2>Blog a tipy</h2>
+      <div class="blog">
+        <article class="post">
+          <h3>5 častých chýb v rozpočtoch a ako im predísť</h3>
+          <p>Od podhodnotených množstiev až po zabudnuté položky BOZP — prehľad najčastejších rizík a praktických riešení.</p>
+          <a class="link" href="#">Čítať viac</a>
+        </article>
+        <article class="post">
+          <h3>Vodohospodárske stavby: špecifiká rozpočtovania</h3>
+          <p>Technológie, materiály a miestne faktory, ktoré zásadne ovplyvňujú cenu a harmonogram.</p>
+          <a class="link" href="#">Čítať viac</a>
+        </article>
+        <article class="post">
+          <h3>Keď potrebujete expresný odhad</h3>
+          <p>Ako pripraviť podklady, aby bol rozpočet rýchly, presný a použiteľný pre ďalšie rozhodovanie.</p>
+          <a class="link" href="#">Čítať viac</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="kontakt" class="section">
+    <div class="container contact">
+      <div class="contact__content">
+        <h2>Kontakt</h2>
+        <p>Napíšte mi a dohodnime si krátku konzultáciu. Odpoviem najneskôr do 24 hodín.</p>
+
+        <form class="form" action="#" method="post">
+          <!-- If you use a form service, put its action URL above -->
+          <div class="form__row">
+            <label for="name">Meno</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form__row">
+            <label for="phone">Telefón</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <div class="form__row">
+            <label for="message">Správa</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn" type="submit">Odoslať</button>
+          <p class="form__note">Odoslaním súhlasíte so spracovaním kontaktných údajov za účelom odpovede.</p>
+        </form>
+
+        <div class="contact__details">
+          <p><strong>Email:</strong> info@costing.sk</p>
+          <p><strong>Telefón:</strong> +421 9XX XXX XXX</p>
+          <p><strong>Lokalita:</strong> Košice, Slovensko</p>
+        </div>
+      </div>
+
+      <div class="contact__map" aria-label="Mapa">
+        <!-- Replace with your embedded map iframe if desired -->
+        <div class="map__placeholder">
+          <span>Mapa Košice</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo logo--footer">Costing<span>.sk</span></a>
+        <p class="footer__text">Profesionálny odhad nákladov pre stavebné projekty. Presnosť, rýchlosť a zrozumiteľnosť.</p>
+      </div>
+      <div>
+        <h4>Rýchle odkazy</h4>
+        <ul class="footer__links">
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#referencie">Referencie</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Právne</h4>
+        <ul class="footer__links">
+          <li><a href="#">GDPR</a></li>
+          <li><a href="#">Obchodné podmienky</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Costing.sk. Všetky práva vyhradené.</p>
+    </div>
+    <script>
+      // Mobile menu toggle
+      const toggle = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.menu');
+      toggle.addEventListener('click', () => menu.classList.toggle('menu--open'));
+
+      // Year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
 </body>
 </html>
-
