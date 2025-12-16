@@ -39,6 +39,6 @@ Tento repozitár obsahuje zdrojový kód pre webstránku **Costing.sk**, určen�
 - Texty sekcií upravte priamo v `index.html`, `about.html`, `contact.html`.
 
 ## 📧 Kontakt
-- Email: info@costing.sk  
-- Telefón: +421 9XX XXX XXX  
+- Email: matuskrivda@costing.sk  
+- Telefón: +421 948 724 824  
 - Lokalita: Košice, Slovensko
