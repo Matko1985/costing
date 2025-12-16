@@ -1,26 +1,44 @@
-# Costing.sk — GitHub Pages
+# Costing.sk — Moderná webstránka na GitHub Pages
 
-Moderná, responzívna stránka pre odhad nákladov v stavebníctve.
+Tento repozitár obsahuje zdrojový kód pre webstránku **Costing.sk**, určenú na prezentáciu služieb odhadu nákladov v stavebníctve.
 
-## Súbory
-- `index.html` — hlavná stránka (one‑page)
-- `style.css` — štýly
-- `images/` — sem vložte vlastné obrázky (`hero.jpg`, `about.jpg`, `favicon.png`)
+## 📂 Štruktúra súborov
+- `index.html` — hlavná stránka (one‑page dizajn)
+- `style.css` — štýly pre všetky podstránky
+- `about.html` — podstránka s detailnými informáciami o autorovi
+- `contact.html` — podstránka s kontaktným formulárom
+- `CNAME` — nastavenie vlastnej domény (`www.costing.sk`)
+- `images/` — priečinok pre obrázky (hero, about, favicon)
+- `README.md` — dokumentácia projektu
 
-## Nasadenie
-1. Nahrajte súbory do `main` branch na GitHube.
-2. V `Settings → Pages` nastavte zdroj `Deploy from a branch` → `main` → `/ (root)`.
-3. V `CNAME` súbore ponechajte `www.costing.sk` (alebo zmeňte na `costing.sk` podľa preferencie).
-4. V DNS:
-   - A záznamy root domény na GitHub IP: 185.199.108.153 / .109.153 / .110.153 / .111.153
-   - CNAME `www` → `matko1985.github.io`
-5. Po propagácii zapnite **Enforce HTTPS** v `Settings → Pages`.
+## 🚀 Nasadenie na GitHub Pages
+1. Nahrajte všetky súbory do vetvy `main`.
+2. V nastaveniach repozitára (`Settings → Pages`) nastavte zdroj:  
+   - **Branch:** `main`  
+   - **Folder:** `/ (root)`
+3. Uistite sa, že v súbore `CNAME` je správna doména (`www.costing.sk` alebo `costing.sk`).
+4. V DNS záznamoch nastavte:
+   - **A záznamy root domény** → GitHub IP:  
+     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - **CNAME `www`** → `matko1985.github.io`
+5. Po propagácii zapnite **Enforce HTTPS** v nastaveniach GitHub Pages.
 
-## Kontakt formulár
-- Ak chcete, aby formulár odosielal emaily, zmeňte `action="#"` na URL poskytovateľa formulárov (alebo použite vlastný backend).
-- Pridajte texty GDPR podľa potreby.
+## 🖥️ Funkcie stránky
+- Moderný responzívny dizajn (desktop + mobil)
+- Hero sekcia so sloganom a CTA
+- Sekcia služieb s ikonami
+- Sekcia „O mne“ s detailmi
+- Referencie projektov
+- Blog/Tipy sekcia
+- Kontakt s formulárom, emailom, telefónom a mapou
+- Jednotný dizajn pre podstránky (`about.html`, `contact.html`)
 
-## Úpravy
-- Farby a CTA zmeníte v `:root` premenných v `style.css`.
+## ⚙️ Úpravy
+- Farby a CTA sa menia v `:root` premenných v `style.css`.
 - Obrázky nahraďte vlastnými v priečinku `images/`.
-- Sekcie upravte priamo v `index.html`.
+- Texty sekcií upravte priamo v `index.html`, `about.html`, `contact.html`.
+
+## 📧 Kontakt
+- Email: info@costing.sk  
+- Telefón: +421 9XX XXX XXX  
+- Lokalita: Košice, Slovensko
