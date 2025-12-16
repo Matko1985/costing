@@ -23,10 +23,10 @@
     <div class="container about">
       <div class="about__text">
         <h1>O mne</h1>
-        <p>Som nezávislý odhadca nákladov so zameraním na technickú presnosť, jasnú komunikáciu a rýchle dodanie. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
+        <p>Som nezávislý stavebný cenár so zameraním na transparentnosť a presnosť, jasnú komunikáciu a rýchle dodanie. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
         <ul class="about__bullets">
-          <li>Expertíza: položkové rozpočty, PD podklady, technická dokumentácia</li>
-          <li>Prístup: transparentné kalkulácie a konzultácie</li>
+          <li>Expertíza: položkové rozpočty, výkazy výmer a kubatúr, PD podklady, technická dokumentácia</li>
+          <li>Prístup: transparentné rozpočty a konzultácie</li>
           <li>Lokalita: Košice a okolie, možná celoslovenská spolupráca</li>
         </ul>
       </div>
