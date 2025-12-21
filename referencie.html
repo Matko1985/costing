@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Referencie - Costing.sk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Costing<span>.sk</span></a>
+      <nav class="menu">
+        <a href="sluzby.html">Služby</a>
+        <a href="o-mne.html">O mne</a>
+        <a href="referencie.html">Referencie</a>
+        <a href="contact.html" class="btn btn--small">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>Referencie</h1>
+      <p class="section__lead">Vybrané ukážky orientačných rozpočtov. Údaje sú anonymizované.</p>
+
+      <div class="refs">
+        <article class="ref">
+          <h3>Košice – Krížovanie kanalizácie s Hornádom (2025)</h3>
+          <p><strong>Rozsah:</strong> krížovanie kanalizačného potrubia s Hornádom.</p>
+          <p><strong>Výstup:</strong> položkový rozpočet + výkaz výmer.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Poprad – prebúdovanie stupňa, SMB (2025)</h3>
+          <p><strong>Rozsah:</strong> prebúdovanie stupňa na rybovod + preložka vodovodu.</p>
+          <p><strong>Výstup:</strong> položkový rozpočet + výkaz výmer.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Čistenie Perínskeho kanála (2024)</h3>
+          <p><strong>Rozsah:</strong> prečistenie prietočného profilu Perínskeho kanála v k.ú. Kechnec.</p>
+          <p><strong>Výstup:</strong> položkový rozpočet + stanovenie PHZ.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Costing.sk</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
 
