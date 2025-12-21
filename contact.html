@@ -5,66 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Kontakt – Costing.sk</title>
-  <meta name="description" content="Kontakt na konzultácie orientačných rozpočtov a výkazov výmer pre stavebné projekty." />
-  <meta name="author" content="Costing.sk" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/favicon.png" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo">Costing<span>.sk</span></a>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">Costing<span>.sk</span></a>
 
-      <nav class="menu" aria-label="Hlavné menu">
-        <a href="sluzby.html">Služby</a>
-        <a href="o-mne.html">O mne</a>
-        <a href="referencie.html">Referencie</a>
-        <a href="contact.html" class="btn btn--small">Kontakt</a>
-      </nav>
+    <nav class="menu">
+      <a href="sluzby.html">Služby</a>
+      <a href="o-mne.html">O mne</a>
+      <a href="referencie.html">Referencie</a>
+      <a href="contact.html" class="btn">Kontakt</a>
+    </nav>
 
-      <button class="menu-toggle" aria-label="Otvoriť menu">☰</button>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <h2>Kontaktujte ma</h2>
+    <p class="section__lead">
+      Pre konzultáciu ma kontaktujte emailom alebo telefonicky. Reagujem najneskôr do 48 hodín.
+    </p>
+
+    <div class="contact">
+      <p><strong>Email:</strong> <a href="mailto:matuskriva@costing.sk">matuskriva@costing.sk</a></p>
+      <p><strong>Telefón:</strong> <a href="tel:+421948724824">+421 948 724 824</a></p>
+      <p><strong>Lokalita:</strong> Košice, Slovensko</p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <!-- Kontakt -->
-  <section class="section">
-    <div class="container">
-      <h2>Kontaktujte ma</h2>
-      <p class="section__lead">
-        Pre konzultáciu ma kontaktujte emailom alebo telefonicky. Reagujem najneskôr do 48 hodín.
-      </p>
+<footer class="footer">
+  © 2025 Costing.sk
+</footer>
 
-      <div class="contact">
-        <p><strong>Email:</strong> <a href="mailto:matuskriva@costing.sk">matuskriva@costing.sk</a></p>
-        <p><strong>Telefón:</strong> <a href="tel:+421948724824">+421 948 724 824</a></p>
-        <p><strong>Lokalita:</strong> Košice, Slovensko</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__bottom">
-      <p>© <span id="year"></span> Costing.sk</p>
-    </div>
-  </footer>
-
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-
-    toggle.addEventListener('click', () => {
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  toggle.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
 
 </body>
 </html>
