@@ -14,7 +14,6 @@ body {
   line-height: 1.7;
 }
 
-/* Kontajner */
 .container {
   width: 92%;
   max-width: 1100px;
@@ -22,7 +21,7 @@ body {
 }
 
 /* --------------------------------------------------
-   HLAVIČKA – zachovaná
+   HLAVIČKA
 -------------------------------------------------- */
 
 .header {
@@ -96,7 +95,6 @@ body {
   color: #fff !important;
 }
 
-/* Mobilné menu */
 .menu-toggle {
   display: none;
   font-size: 1.8rem;
@@ -106,7 +104,7 @@ body {
 }
 
 /* --------------------------------------------------
-   HERO SEKCIÁ
+   HERO
 -------------------------------------------------- */
 
 .hero {
@@ -142,7 +140,7 @@ body {
 }
 
 /* --------------------------------------------------
-   TRUST BAR
+   TRUST BAR – OPRAVENÉ ZAROVNANIE
 -------------------------------------------------- */
 
 .trust {
@@ -159,22 +157,36 @@ body {
 
 .trust__item {
   background: #f6faff;
-  padding: 1.4rem 1.6rem;
+  padding: 1.6rem;
   border-radius: 10px;
   border: 1px solid #dce8ff;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
+  min-height: 140px;
+  justify-content: center;
+  text-align: left;
 }
 
 .trust__item .icon {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+
+.trust__item strong {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+.trust__item span,
+.trust__item strong {
+  display: block;
 }
 
 /* --------------------------------------------------
-   SEKCIÁ SLUŽBY, O MNE, REFERENCIE
+   SEKCIÁ
 -------------------------------------------------- */
 
 .section {
