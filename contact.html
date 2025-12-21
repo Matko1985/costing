@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontakt – Costing.sk</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo">Costing<span>.sk</span></a>
-      <nav class="menu">
-        <a href="index.html#sluzby">Služby</a>
-        <a href="index.html#referencie">Referencie</a>
-        <a href="about.html">O mne</a>
-      </nav>
-    </div>
-  </header>
 
-  <section class="section">
-    <div class="container contact">
-      <div class="contact__content">
-        <h1>Kontaktujte ma</h1>
-        <p>Pre konzultáciu ma kontaktujte emailom alebo telefonicky. Reagujem najneskôr do 48 hodín.</p>
-        <div class="contact__details">
-          <p><strong>Email:</strong> matuskrivda@costing.sk</p>
-          <p><strong>Telefón:</strong> +421 948 724 824</p>
-          <p><strong>Lokalita:</strong> Košice, Slovensko</p>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="section container">
+  <h2>Kontaktujte ma</h2>
+  <p class="section__lead">
+    Pre konzultáciu ma kontaktujte emailom alebo telefonicky. Reagujem najneskôr do 48 hodín.
+  </p>
 
-  <footer class="footer">
-    <div class="container footer__bottom">
-      <p>© <span id="year"></span> Costing.sk</p>
-    </div>
-  </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <div class="contact">
+    <p><strong>Email:</strong> <a href="mailto:matuskriva@costing.sk">matuskriva@costing.sk</a></p>
+    <p><strong>Telefón:</strong> <a href="tel:+421948724824">+421 948 724 824</a></p>
+    <p><strong>Lokalita:</strong> Košice, Slovensko</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Costing.sk</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
