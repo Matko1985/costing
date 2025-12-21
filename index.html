@@ -6,6 +6,9 @@
   <title>Costing.sk – Rýchly a presný orientačný rozpočet s výkazom výmer</title>
   <meta name="description" content="Profesionálny odhad nákladov v stavebníctve, najmä pre vodohospodárske stavby. Expresné rozpočty, konzultácie, výkazy výmer.">
   <meta name="author" content="Costing.sk" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="images/favicon.png" />
 </head>
@@ -19,7 +22,7 @@
         <a href="#sluzby">Služby</a>
         <a href="#o-mne">O mne</a>
         <a href="#referencie">Referencie</a>
-        <a href="#kontakt" class="btn btn--small">Kontakt</a>
+        <a href="contact.html" class="btn btn--small">Kontakt</a>
       </nav>
       <button class="menu-toggle" aria-label="Otvoriť menu">☰</button>
     </div>
@@ -56,7 +59,14 @@
     <div class="container">
       <h2>Služby</h2>
       <p class="section__lead">Komplexný odhad nákladov od štúdie po realizačný projekt. Pre projektantov, investorov a stavebné firmy.</p>
-      <!-- sem môžeš doplniť konkrétne služby -->
+    </div>
+  </section>
+
+  <!-- O mne -->
+  <section id="o-mne" class="section">
+    <div class="container">
+      <h2>O mne</h2>
+      <p class="section__lead">Som rozpočtár špecializujúci sa na vodohospodárske stavby a technickú dokumentáciu.</p>
     </div>
   </section>
 
@@ -88,37 +98,16 @@
     </div>
   </section>
 
-  <!-- Kontakt -->
-  <section id="kontakt" class="section">
-    <div class="container contact">
-      <div class="contact__content">
-        <h2>Kontaktujte ma</h2>
-        <p>Pre konzultáciu ma kontaktujte emailom alebo telefonicky. Reagujem najneskôr do 48 hodín.</p>
-        <div class="contact__details">
-          <p><strong>Email:</strong> <a href="mailto:matuskrivda@costing.sk">matuskrivda@costing.sk</a></p>
-          <p><strong>Telefón:</strong> <a href="tel:+421944728824">+421 944 728 824</a></p>
-          <p><strong>Lokalita:</strong> Košice, Slovensko</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
-  <footer class="footer" style="background:#0d1b2a; padding:40px 0; margin-top:60px; color:#e5e5e5;">
-    <div class="container" style="text-align:center;">
-      <p style="font-size:15px; opacity:0.85; margin-bottom:8px;">
-        © <span id="year"></span> Costing.sk
-      </p>
-      <p style="font-size:14px; opacity:0.65;">Všetky práva vyhradené.</p>
-      <hr style="border:0; border-top:1px solid rgba(255,255,255,0.15); margin:25px auto; width:60%;">
-      <p style="font-size:13px; opacity:0.45;">
-        Profesionálne orientačné rozpočty, výkazy výmer a konzultácie pre projektantov a stavebné firmy.
-      </p>
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Costing.sk</p>
     </div>
-    <script>
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
   </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
