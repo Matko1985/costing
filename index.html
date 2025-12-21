@@ -3,76 +3,84 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Costing.sk – Orientačné rozpočty a výkazy výmer</title>
 
-  <!-- META DESCRIPTION – toto zobrazí Google -->
-  <meta name="description" content="Venujeme sa tvorbe orientačných rozpočtov a kalkulácií v programe Cenkros 4." />
-  <meta name="author" content="Costing.sk" />
+  <title>Costing.sk – Orientačné rozpočty</title>
+  <meta name="description" content="Rýchly a presný orientačný rozpočet pre vaše stavebné projekty." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/favicon.png" />
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container nav">
-      <a href="index.html" class="logo">Costing<span>.sk</span></a>
-      <nav class="menu" aria-label="Hlavné menu">
-        <a href="sluzby.html">Služby</a>
-        <a href="o-mne.html">O mne</a>
-        <a href="referencie.html">Referencie</a>
-        <a href="contact.html" class="btn btn--small">Kontakt</a>
-      </nav>
-      <button class="menu-toggle" aria-label="Otvoriť menu">☰</button>
-    </div>
-  </header>
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">Costing<span>.sk</span></a>
 
-  <!-- Hero sekcia -->
-  <section class="hero">
-    <div class="container hero__content">
-      <div class="hero__text animate">
-        <h1>Rýchly a presný orientačný rozpočet pre vaše stavebné projekty</h1>
-        <p>Venujeme sa tvorbe orientačných rozpočtov a kalkulácií v programe Cenkros 4.</p>
-        <div class="hero__cta">
-          <a href="sluzby.html" class="btn btn--ghost">Pozrieť služby</a>
-        </div>
-      </div>
-      <div class="hero__visual animate">
-        <img src="images/costing-logo.jpg" alt="Logo Costing.sk" />
-      </div>
-    </div>
-  </section>
+    <nav class="menu">
+      <a href="sluzby.html">Služby</a>
+      <a href="o-mne.html">O mne</a>
+      <a href="referencie.html">Referencie</a>
+      <a href="contact.html" class="btn">Kontakt</a>
+    </nav>
 
-  <!-- Trust bar -->
-  <section class="trust">
-    <div class="container trust__grid">
-      <div class="trust__item animate"><span class="icon">⚡</span><strong>Express odhady</strong> do 24–72 hodín</div>
-      <div class="trust__item animate"><span class="icon">📄</span><strong>Technická presnosť</strong> a dokumentácia</div>
-      <div class="trust__item animate"><span class="icon">🤝</span><strong>Dôvera</strong> a transparentnosť</div>
-      <div class="trust__item animate"><span class="icon">💧</span><strong>Vodohospodárske</strong> projekty</div>
-    </div>
-  </section>
+    <button class="menu-toggle">☰</button>
+  </div>
+</header>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__bottom">
-      <p>© <span id="year"></span> Costing.sk</p>
+<section class="hero">
+  <div class="container hero__content">
+    <div class="hero__text">
+      <h1>Rýchly a presný orientačný rozpočet pre vaše stavebné projekty</h1>
+      <p>Venujeme sa tvorbe orientačných rozpočtov a kalkulácií v programe Cenkros 4.</p>
+      <a href="sluzby.html" class="btn--ghost">Pozrieť služby</a>
     </div>
-  </footer>
 
-  <!-- Mobilné menu -->
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggle.addEventListener('click', () => {
-      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-    });
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <div class="hero__visual">
+      <img src="images/logo.png" alt="Costing logo">
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust__grid">
+
+    <div class="trust__item">
+      <i class="fa-solid fa-bolt"></i>
+      <strong>Express odhady</strong>
+      <span>do 24–72 hodín</span>
+    </div>
+
+    <div class="trust__item">
+      <i class="fa-solid fa-file-lines"></i>
+      <strong>Technická presnosť</strong>
+      <span>a dokumentácia</span>
+    </div>
+
+    <div class="trust__item">
+      <i class="fa-solid fa-handshake"></i>
+      <strong>Dôvera</strong>
+      <span>a transparentnosť</span>
+    </div>
+
+    <div class="trust__item">
+      <i class="fa-solid fa-droplet"></i>
+      <strong>Vodohospodárske</strong>
+      <span>projekty</span>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  © 2025 Costing.sk
+</footer>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+  toggle.addEventListener('click', () => {
+    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+  });
+</script>
 
 </body>
 </html>
