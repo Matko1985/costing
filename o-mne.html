@@ -1,1 +1,59 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O mne - Costing.sk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="logo">Costing<span>.sk</span></a>
+      <nav class="menu">
+        <a href="sluzby.html">Služby</a>
+        <a href="o-mne.html">O mne</a>
+        <a href="referencie.html">Referencie</a>
+        <a href="contact.html" class="btn btn--small">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1>O mne</h1>
+      <p class="section__lead">Som rozpočtár špecializujúci sa na vodohospodárske stavby a technickú dokumentáciu.</p>
+
+      <div class="refs">
+        <article class="ref">
+          <h3>Moja prax</h3>
+          <p>Viac ako 10 rokov skúseností v oblasti rozpočtovania a technickej prípravy stavieb.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Špecializácia</h3>
+          <p>Vodohospodárske stavby, preložky sietí, úpravy tokov, mostné objekty.</p>
+        </article>
+
+        <article class="ref">
+          <h3>Spolupráca</h3>
+          <p>Pracujem s projektantmi, investormi a stavebnými firmami po celom Slovensku.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Costing.sk</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
 
