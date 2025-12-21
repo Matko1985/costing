@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
 * {
   margin: 0;
@@ -140,7 +141,7 @@ body {
 }
 
 /* --------------------------------------------------
-   TRUST BAR – OPRAVENÉ ZAROVNANIE
+   TRUST BAR – Font Awesome ikonky
 -------------------------------------------------- */
 
 .trust {
@@ -170,19 +171,15 @@ body {
   text-align: left;
 }
 
-.trust__item .icon {
+.trust__item i {
   font-size: 1.6rem;
-  opacity: 0.6;
+  color: #0077cc;
+  opacity: 0.8;
 }
 
 .trust__item strong {
   font-size: 1.1rem;
   color: #222;
-}
-
-.trust__item span,
-.trust__item strong {
-  display: block;
 }
 
 /* --------------------------------------------------
