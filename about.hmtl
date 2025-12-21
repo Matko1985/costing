@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>O mne — Costing.sk</title>
+  <title>O mne – Costing.sk</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,6 @@
       <nav class="menu">
         <a href="index.html#sluzby">Služby</a>
         <a href="index.html#referencie">Referencie</a>
-        <a href="index.html#blog">Blog</a>
         <a href="contact.html" class="btn btn--small">Kontakt</a>
       </nav>
     </div>
@@ -23,11 +22,11 @@
     <div class="container about">
       <div class="about__text">
         <h1>O mne</h1>
-        <p>Som nezávislý stavebný cenár so zameraním na transparentnosť a presnosť, jasnú komunikáciu a rýchle dodanie. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
+        <p>Som nezávislý stavebný cenár z Košíc. Klientom prinášam presné výkazy výmer, položkové rozpočty a technickú dokumentáciu s dôrazom na transparentnosť, konzultácie a rýchle dodanie.</p>
         <ul class="about__bullets">
-          <li>Expertíza: položkové rozpočty, výkazy výmer a kubatúr, PD podklady, technická dokumentácia</li>
-          <li>Prístup: transparentné rozpočty a konzultácie</li>
-          <li>Lokalita: Košice a okolie, možná celoslovenská spolupráca</li>
+          <li><strong>Expertíza:</strong> výkazy výmer, rozpočty, PD podklady, technická dokumentácia</li>
+          <li><strong>Prístup:</strong> jasná komunikácia, konzultácie, expresné odhady</li>
+          <li><strong>Lokalita:</strong> Košice a okolie, možná spolupráca aj na diaľku</li>
         </ul>
       </div>
       <div class="about__visual"></div>
@@ -38,7 +37,7 @@
     <div class="container footer__bottom">
       <p>© <span id="year"></span> Costing.sk</p>
     </div>
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </footer>
 </body>
 </html>
