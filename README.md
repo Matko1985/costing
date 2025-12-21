@@ -1,43 +1,43 @@
-Costing.sk – Orientačné rozpočty a výkazy výmer
-Tento repozitár obsahuje zdrojový kód webovej stránky Costing.sk, ktorá prezentuje služby nezávislého stavebného cenára so zameraním na orientačné rozpočty, výkazy výmer a technickú dokumentáciu pre projektantov, investorov a stavebné firmy.
+Costing.sk
+Jednoduchá a prehľadná prezentačná stránka nezávislého stavebného cenára.
+Zameranie na orientačné rozpočty, výkazy výmer a technickú dokumentáciu pre projektantov, investorov a stavebné firmy.
 
-Web je navrhnutý tak, aby bol rýchly, prehľadný a zrozumiteľný, s dôrazom na jasnú komunikáciu a profesionálny vizuál.
+Stránka je statická, optimalizovaná pre rýchlosť, mobilné zariadenia a nasadenie na GitHub Pages.
 
-🚀 Hlavné sekcie webu
-Hero sekcia
-Úvodné predstavenie služby s jasným posolstvom a CTA prvkami.
+Obsah
+index.html – hlavná stránka
 
-Služby
-Tri hlavné oblasti:
+about.html – informácie o službách a prístupe
 
-Rozpočty pre projektantov
+contact.html – kontaktné údaje (bez formulára)
 
-Vodohospodárske stavby
+style.css – kompletný dizajn webu
 
-Konzultácie a kontrola nacenení
+images/ – obrázky a favicon
 
-O mne
-Stručné predstavenie odbornosti, prístupu a lokality pôsobenia.
+Funkcie a vlastnosti
+responzívny dizajn
 
-Referencie
-Vybrané anonymizované ukážky orientačných rozpočtov.
+moderná typografia (Montserrat, Roboto)
+
+jednoduchá navigácia
+
+sekcie: Služby, O mne, Referencie, Kontakt
+
+bez blogu, bez tipov, bez kontaktného formulára
+
+žiadne externé knižnice ani frameworky
+
+Použité technológie
+HTML5
+
+CSS3
+
+Google Fonts
+
+statický hosting (GitHub Pages / Websupport)
 
 Kontakt
-Jednoduchá kontaktná sekcia bez formulára, obsahujúca:
-
-email
-
-telefón
-
-lokalitu
-
-🎨 Použité technológie
-HTML5 – štruktúra a obsah
-
-CSS3 – vlastný moderný dizajn bez frameworkov
-
-Google Fonts – Montserrat & Roboto
-
-Responzívny dizajn – optimalizovaný pre mobil, tablet aj desktop
-
-Statický web – vhodný pre GitHub Pages alebo akýkoľvek statický hosting
+Email: matuskrivda@costing.sk
+Telefón: +421 948 724 824
+Lokalita: Košice, Slovensko
