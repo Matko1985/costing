@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Služby – Costing.sk</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,30 +12,51 @@
 <header class="header">
   <div class="container nav">
     <a href="index.html" class="logo">Costing<span>.sk</span></a>
+
     <nav class="menu">
       <a href="sluzby.html">Služby</a>
       <a href="o-mne.html">O mne</a>
       <a href="referencie.html">Referencie</a>
-      <a href="contact.html" class="btn btn--small">Kontakt</a>
+      <a href="contact.html" class="btn">Kontakt</a>
     </nav>
+
     <button class="menu-toggle">☰</button>
   </div>
 </header>
 
-<section class="section container">
-  <h2>Služby</h2>
-  <p class="section__lead">Profesionálne orientačné rozpočty, výkazy výmer a konzultácie pre stavebné projekty.</p>
+<section class="section">
+  <div class="container">
+    <h2>Služby</h2>
+    <p class="section__lead">Profesionálne orientačné rozpočty, výkazy výmer a konzultácie pre stavebné projekty.</p>
 
-  <div class="refs">
-    <div class="ref"><strong>Orientačný rozpočet stavby</strong><br>Rýchle a presné spracovanie rozpočtu podľa projektovej dokumentácie.</div>
-    <div class="ref"><strong>Výkaz výmer</strong><br>Podrobný výkaz výmer pre projektantov a investorov.</div>
-    <div class="ref"><strong>Konzultácie</strong><br>Odborné poradenstvo pri príprave a kontrole rozpočtov.</div>
-    <div class="ref"><strong>Vodohospodárske stavby</strong><br>Príprava zjednodušených PD pre opravu a údržbu vodohospodárskych stavieb, bez autorizácie.</div>
+    <div class="services">
+
+      <div class="service">
+        <strong>Orientačný rozpočet stavby</strong>
+        Rýchle a presné spracovanie rozpočtu podľa projektovej dokumentácie.
+      </div>
+
+      <div class="service">
+        <strong>Výkaz výmer</strong>
+        Podrobný výkaz výmer pre projektantov a investorov.
+      </div>
+
+      <div class="service">
+        <strong>Konzultácie</strong>
+        Odborné poradenstvo pri príprave a kontrole rozpočtov.
+      </div>
+
+      <div class="service">
+        <strong>Vodohospodárske stavby</strong>
+        Príprava zjednodušených PD pre opravu a údržbu vodohospodárskych stavieb, bez autorizácie.
+      </div>
+
+    </div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© <span id="year"></span> Costing.sk</p>
+  © 2025 Costing.sk
 </footer>
 
 <script>
@@ -43,7 +65,6 @@
   toggle.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   });
-  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
