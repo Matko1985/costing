@@ -1,44 +1,43 @@
-# Costing.sk — Moderná webstránka na GitHub Pages
+Costing.sk – Orientačné rozpočty a výkazy výmer
+Tento repozitár obsahuje zdrojový kód webovej stránky Costing.sk, ktorá prezentuje služby nezávislého stavebného cenára so zameraním na orientačné rozpočty, výkazy výmer a technickú dokumentáciu pre projektantov, investorov a stavebné firmy.
 
-Tento repozitár obsahuje zdrojový kód pre webstránku **Costing.sk**, určenú na prezentáciu služieb odhadu nákladov v stavebníctve.
+Web je navrhnutý tak, aby bol rýchly, prehľadný a zrozumiteľný, s dôrazom na jasnú komunikáciu a profesionálny vizuál.
 
-## 📂 Štruktúra súborov
-- `index.html` — hlavná stránka (one‑page dizajn)
-- `style.css` — štýly pre všetky podstránky
-- `about.html` — podstránka s detailnými informáciami o autorovi
-- `contact.html` — podstránka s kontaktným formulárom
-- `CNAME` — nastavenie vlastnej domény (`www.costing.sk`)
-- `images/` — priečinok pre obrázky (hero, about, favicon)
-- `README.md` — dokumentácia projektu
+🚀 Hlavné sekcie webu
+Hero sekcia
+Úvodné predstavenie služby s jasným posolstvom a CTA prvkami.
 
-## 🚀 Nasadenie na GitHub Pages
-1. Nahrajte všetky súbory do vetvy `main`.
-2. V nastaveniach repozitára (`Settings → Pages`) nastavte zdroj:  
-   - **Branch:** `main`  
-   - **Folder:** `/ (root)`
-3. Uistite sa, že v súbore `CNAME` je správna doména (`www.costing.sk` alebo `costing.sk`).
-4. V DNS záznamoch nastavte:
-   - **A záznamy root domény** → GitHub IP:  
-     `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
-   - **CNAME `www`** → `matko1985.github.io`
-5. Po propagácii zapnite **Enforce HTTPS** v nastaveniach GitHub Pages.
+Služby
+Tri hlavné oblasti:
 
-## 🖥️ Funkcie stránky
-- Moderný responzívny dizajn (desktop + mobil)
-- Hero sekcia so sloganom a CTA
-- Sekcia služieb s ikonami
-- Sekcia „O mne“ s detailmi
-- Referencie projektov
-- Blog/Tipy sekcia
-- Kontakt s formulárom, emailom, telefónom a mapou
-- Jednotný dizajn pre podstránky (`about.html`, `contact.html`)
+Rozpočty pre projektantov
 
-## ⚙️ Úpravy
-- Farby a CTA sa menia v `:root` premenných v `style.css`.
-- Obrázky nahraďte vlastnými v priečinku `images/`.
-- Texty sekcií upravte priamo v `index.html`, `about.html`, `contact.html`.
+Vodohospodárske stavby
 
-## 📧 Kontakt
-- Email: matuskrivda@costing.sk  
-- Telefón: +421 948 724 824  
-- Lokalita: Košice, Slovensko
+Konzultácie a kontrola nacenení
+
+O mne
+Stručné predstavenie odbornosti, prístupu a lokality pôsobenia.
+
+Referencie
+Vybrané anonymizované ukážky orientačných rozpočtov.
+
+Kontakt
+Jednoduchá kontaktná sekcia bez formulára, obsahujúca:
+
+email
+
+telefón
+
+lokalitu
+
+🎨 Použité technológie
+HTML5 – štruktúra a obsah
+
+CSS3 – vlastný moderný dizajn bez frameworkov
+
+Google Fonts – Montserrat & Roboto
+
+Responzívny dizajn – optimalizovaný pre mobil, tablet aj desktop
+
+Statický web – vhodný pre GitHub Pages alebo akýkoľvek statický hosting
