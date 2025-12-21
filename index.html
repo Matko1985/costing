@@ -13,7 +13,8 @@
   <link rel="icon" href="images/favicon.png" />
 </head>
 <body>
-  <!-- Sticky navigation -->
+
+  <!-- Header -->
   <header class="header">
     <div class="container nav">
       <a href="#" class="logo">Costing<span>.sk</span></a>
@@ -21,7 +22,6 @@
         <a href="#sluzby">Služby</a>
         <a href="#o-mne">O mne</a>
         <a href="#referencie">Referencie</a>
-        <a href="#blog">Blog</a>
         <a href="#kontakt" class="btn btn--small">Kontakt</a>
       </nav>
       <button class="menu-toggle" aria-label="Otvoriť menu">☰</button>
@@ -33,14 +33,13 @@
     <div class="container hero__content">
       <div class="hero__text">
         <h1>Rýchly a presný orientačný rozpočet pre vaše stavebné projekty</h1>
-        <p>Expresné rozpočty, konzultácie a výkazy výmer. Špecializácia na vodohospodárske stavby a spoluprácu s projektantmi a stavebnými firmami v Košiciach a okolí.</p>
+        <p>Expresné rozpočty, konzultácie a výkazy výmer. Špecializácia na vodohospodárske stavby a spolupráca s projektantmi a stavebnými firmami v Košiciach a okolí.</p>
         <div class="hero__cta">
-          <a href="#kontakt" class="btn">Získať odhad</a>
           <a href="#sluzby" class="btn btn--ghost">Pozrieť služby</a>
         </div>
       </div>
-      <div class="hero__visual" role="img" aria-label="Ilustrácia stavebného projektu">
-        <!-- Replace with your image: images/hero.jpg -->
+      <div class="hero__visual" role="img" aria-label="Logo Costing.sk">
+        <img src="images/logo-costing.svg" alt="Logo Costing.sk" style="max-width:100%; height:auto; border-radius:12px;" />
       </div>
     </div>
   </section>
@@ -48,22 +47,10 @@
   <!-- Trust bar -->
   <section class="trust">
     <div class="container trust__grid">
-      <div class="trust__item">
-        <span class="icon">⏱️</span>
-        <p><strong>Express odhady</strong> do 24–72 hodín</p>
-      </div>
-      <div class="trust__item">
-        <span class="icon">📐</span>
-        <p><strong>Technická presnosť</strong> a dokumentácia</p>
-      </div>
-      <div class="trust__item">
-        <span class="icon">🔒</span>
-        <p><strong>Dôvera</strong> a transparentnosť</p>
-      </div>
-      <div class="trust__item">
-        <span class="icon">🌊</span>
-        <p><strong>Vodohospodárske</strong> projekty</p>
-      </div>
+      <div class="trust__item"><span class="icon">⏱️</span><p><strong>Express odhady</strong> do 24–72 hodín</p></div>
+      <div class="trust__item"><span class="icon">📐</span><p><strong>Technická presnosť</strong> a dokumentácia</p></div>
+      <div class="trust__item"><span class="icon">🔒</span><p><strong>Dôvera</strong> a transparentnosť</p></div>
+      <div class="trust__item"><span class="icon">🌊</span><p><strong>Vodohospodárske</strong> projekty</p></div>
     </div>
   </section>
 
@@ -77,10 +64,10 @@
         <article class="card">
           <div class="card__icon">🧮</div>
           <h3>Rozpočty pre projektantov</h3>
-          <p>Presné položkové rozpočty, výkazy výmer a podklady pre PD. Jednotkové ceny podľa najaktuálnejšej cenníkovej databázy CENEKON.</p>
+          <p>Presné položkové rozpočty, výkazy výmer a podklady pre PD. Jednotkové ceny podľa najaktuálnejšej databázy CENEKON.</p>
           <ul class="card__list">
             <li><strong>Výstup:</strong> XLSX, PDF</li>
-            <li><strong>Termín:</strong> štandardne 3–7 dní</li>
+            <li><strong>Termín:</strong> 3–7 dní</li>
             <li><strong>Konzultácie:</strong> online/na mieste</li>
           </ul>
         </article>
@@ -88,18 +75,18 @@
         <article class="card">
           <div class="card__icon">🌊</div>
           <h3>Vodohospodárske stavby</h3>
-          <p>Orientačné rozpočty a výkazy výmer pre kanalizácie, vodovody, retenčné nádrže, odvodňovacie systémy, úpravy vodných tokov, atď.</p>
+          <p>Orientačné rozpočty a výkazy výmer pre kanalizácie, vodovody, retenčné nádrže, odvodnenia a úpravy tokov.</p>
           <ul class="card__list">
-            <li><strong>Výstup:</strong> položkový rozpočet, výkaz výmer</li>
+            <li><strong>Výstup:</strong> položkový rozpočet + výkaz výmer</li>
             <li><strong>Riziká:</strong> analýza citlivosti</li>
-            <li><strong>Varianty:</strong> porovnanie riešení, porovnávacie rozpočty</li>
+            <li><strong>Varianty:</strong> porovnávacie riešenia</li>
           </ul>
         </article>
 
         <article class="card">
           <div class="card__icon">⚙️</div>
           <h3>Konzultácie a kontrola</h3>
-          <p>Revízia nacenení, nezávislé druhé stanovisko, optimalizácie a porovnanie dodávateľských ponúk.</p>
+          <p>Revízia nacenení, druhé stanovisko, optimalizácie a porovnanie dodávateľských ponúk.</p>
           <ul class="card__list">
             <li><strong>Forma:</strong> hodinová/flat fee</li>
             <li><strong>Výsledok:</strong> správa s odporúčaniami</li>
@@ -115,17 +102,15 @@
     <div class="container about">
       <div class="about__text">
         <h2>O mne</h2>
-        <p>Som nezávislý stavebný cenár so zameraním na presnosť a transparentnosť, jasnú komunikáciu a rýchle dodanie. Mám skúsenosti s plánovaním opráv a údržby pre vodohospodárske stavby, tvorbou zjednodušenej technickej dokumentácie a tvorbou orientačných rozpočtov s podrobným výkazom výmer. Spolupracujem s projektantmi a stavebnými firmami v Košickom kraji.</p>
+        <p>Som nezávislý stavebný cenár z Košíc. Prinášam presné výkazy výmer, položkové rozpočty a technickú dokumentáciu s dôrazom na transparentnosť, konzultácie a rýchle dodanie.</p>
         <ul class="about__bullets">
-          <li><strong>Expertíza:</strong> položkové rozpočty, PD podklady, technická dokumentácia</li>
-          <li><strong>Prístup:</strong> transparentné kalkulácie a konzultácie</li>
-          <li><strong>Lokalita:</strong> Košice a okolie, možná celoslovenská spolupráca</li>
+          <li><strong>Expertíza:</strong> výkazy výmer, rozpočty, PD podklady</li>
+          <li><strong>Prístup:</strong> jasná komunikácia a konzultácie</li>
+          <li><strong>Lokalita:</strong> Košice a okolie, spolupráca aj na diaľku</li>
         </ul>
         <a href="#kontakt" class="btn">Dohodnúť konzultáciu</a>
       </div>
-      <div class="about__visual" role="img" aria-label="Technické výkresy a plánovanie">
-        <!-- Replace with your image: images/about.jpg -->
-      </div>
+      <div class="about__visual"></div>
     </div>
   </section>
 
@@ -133,83 +118,20 @@
   <section id="referencie" class="section">
     <div class="container">
       <h2>Referencie</h2>
-      <p class="section__lead">Vybrané ukážky orientačných rozpočtov pre projekty. Údaje sú anonymizované z dôvodu ochrany klientov.</p>
+      <p class="section__lead">Vybrané ukážky orientačných rozpočtov. Údaje sú anonymizované.</p>
 
       <div class="refs">
         <article class="ref">
-          <h3>Košice - Križovanie kanalizácie s Hornádom (2025)</h3>
+          <h3>Košice – Križovanie kanalizácie s Hornádom (2025)</h3>
           <p><strong>Rozsah:</strong> križovanie kanalizačného potrubia s Hornádom.</p>
           <p><strong>Výstup:</strong> položkový rozpočet + výkaz výmer.</p>
         </article>
 
         <article class="ref">
-          <h3>Poprad, Poprad - prebudovanie stupňa v r.km 120,050 - 122,450, SMB (2025)</h3>
-          <p><strong>Rozsah:</strong> prebudovanie stupňa na rybovod s preložkou vodovodu.</p>
+          <h3>Poprad – prebudovanie stupňa, SMB (2025)</h3>
+          <p><strong>Rozsah:</strong> prebudovanie stupňa na rybovod + preložka vodovodu.</p>
           <p><strong>Výstup:</strong> položkový rozpočet + výkaz výmer.</p>
         </article>
 
         <article class="ref">
-          <h3>Čistenie Perínskeho kanála v k.ú. Kechnec (2024)</h3>
-          <p><strong>Rozsah:</strong> prečistenie prietočného profilu koryta od nánosov a stanovenie PHZ.</p>
-          <p><strong>Výstup:</strong> položkový rozpočet + výkaz výmer.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-         <div class="contact__details">
-          <p><strong>Email:</strong> matuskrivda@costing.sk</p>
-          <p><strong>Telefón:</strong> +421 948 724 824</p>
-          <p><strong>Lokalita:</strong> Košice, Slovensko</p>
-        </div>
-      </div>
-
-      <div class="contact__map" aria-label="Mapa">
-        <!-- Replace with your embedded map iframe if desired -->
-        <div class="map__placeholder">
-          <span>Mapa Košice</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer__grid">
-      <div>
-        <a href="#" class="logo logo--footer">Costing<span>.sk</span></a>
-        <p class="footer__text">Profesionálny odhad nákladov pre stavebné projekty. Presnosť, rýchlosť a zrozumiteľnosť.</p>
-      </div>
-      <div>
-        <h4>Rýchle odkazy</h4>
-        <ul class="footer__links">
-          <li><a href="#sluzby">Služby</a></li>
-          <li><a href="#referencie">Referencie</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#kontakt">Kontakt</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Právne</h4>
-        <ul class="footer__links">
-          <li><a href="#">GDPR</a></li>
-          <li><a href="#">Obchodné podmienky</a></li>
-          <li><a href="#">Cookies</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="container footer__bottom">
-      <p>© <span id="year"></span> Costing.sk. Všetky práva vyhradené.</p>
-    </div>
-    <script>
-      // Mobile menu toggle
-      const toggle = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.menu');
-      toggle.addEventListener('click', () => menu.classList.toggle('menu--open'));
-
-      // Year
-      document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
-  </footer>
-</body>
-</html>
+          <h3>Čistenie Perínskeho kanála (2024
