@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>Referencie – Costing.sk</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,43 +12,49 @@
 <header class="header">
   <div class="container nav">
     <a href="index.html" class="logo">Costing<span>.sk</span></a>
+
     <nav class="menu">
       <a href="sluzby.html">Služby</a>
       <a href="o-mne.html">O mne</a>
       <a href="referencie.html">Referencie</a>
-      <a href="contact.html" class="btn btn--small">Kontakt</a>
+      <a href="contact.html" class="btn">Kontakt</a>
     </nav>
+
     <button class="menu-toggle">☰</button>
   </div>
 </header>
 
-<section class="section container">
-  <h2>Referencie</h2>
-  <p class="section__lead">Vybrané projekty, na ktorých som sa podieľal.</p>
+<section class="section">
+  <div class="container">
+    <h2>Referencie</h2>
+    <p class="section__lead">Vybrané projekty, na ktorých som sa podieľal.</p>
 
-  <div class="refs">
-    <div class="ref">
-      <strong>Košice – Krížovanie kanalizácie s Hornádom (2025)</strong><br>
-      Rozsah: krížovanie kanalizačného potrubia s Hornádom.<br>
-      Výstup: orientačný rozpočet + výkaz výmer.
-    </div>
+    <div class="refs">
 
-    <div class="ref">
-      <strong>Poprad – Prebudovanie stupňa, SMB (2025)</strong><br>
-      Rozsah: prebudovanie stupňa na rybovod + preložka vodovodu.<br>
-      Výstup: orientačný rozpočet + výkaz výmer.
-    </div>
+      <div class="ref">
+        <strong>Košice – Krížovanie kanalizácie s Hornádom (2025)</strong>
+        Rozsah: krížovanie kanalizačného potrubia s Hornádom.<br>
+        Výstup: orientačný rozpočet + výkaz výmer.
+      </div>
 
-    <div class="ref">
-      <strong>Čistenie Perínskeho kanála (2024)</strong><br>
-      Rozsah: prečistenie prietočného profilu Perínskeho kanála v k.ú. Kechnec.<br>
-      Výstup: orientačný rozpočet + stanovenie PHZ.
+      <div class="ref">
+        <strong>Poprad – Prebudovanie stupňa, SMB (2025)</strong>
+        Rozsah: prebudovanie stupňa na rybovod + preložka vodovodu.<br>
+        Výstup: orientačný rozpočet + výkaz výmer.
+      </div>
+
+      <div class="ref">
+        <strong>Čistenie Perínskeho kanála (2024)</strong>
+        Rozsah: prečistenie prietočného profilu Perínskeho kanála v k.ú. Kechnec.<br>
+        Výstup: orientačný rozpočet + stanovenie PHZ.
+      </div>
+
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© <span id="year"></span> Costing.sk</p>
+  © 2025 Costing.sk
 </footer>
 
 <script>
@@ -56,7 +63,6 @@
   toggle.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   });
-  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
