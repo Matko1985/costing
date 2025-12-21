@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>O mne – Costing.sk</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,38 +12,49 @@
 <header class="header">
   <div class="container nav">
     <a href="index.html" class="logo">Costing<span>.sk</span></a>
+
     <nav class="menu">
       <a href="sluzby.html">Služby</a>
       <a href="o-mne.html">O mne</a>
       <a href="referencie.html">Referencie</a>
-      <a href="contact.html" class="btn btn--small">Kontakt</a>
+      <a href="contact.html" class="btn">Kontakt</a>
     </nav>
+
     <button class="menu-toggle">☰</button>
   </div>
 </header>
 
-<section class="section container">
-  <h2>O mne</h2>
-  <p class="section__lead">Som stavebný cenár so skúsenosťami v oblasti rozpočtovania najmä vodohospodárskych stavieb a tvorby zjednodušenej projektovej dokumentácie pre opravy a údržbu vodohospodárskych stavieb.</p>
+<section class="section">
+  <div class="container">
+    <h2>O mne</h2>
 
-  <div class="refs">
-    <div class="ref">
-      <strong>Moja prax</strong><br>
-      Roky skúseností s orientačnými rozpočtami, výkazmi výmer a technickými podkladmi.
-    </div>
-    <div class="ref">
-      <strong>Spolupráca</strong><br>
-      Pracujem s projektantmi, stavebnými firmami a investormi.
-    </div>
-    <div class="ref">
-      <strong>Presnosť</strong><br>
-      Dbám na detail, technickú správnosť a transparentnosť výkazu výmer.
+    <p class="section__lead">
+      Som stavebný cenár so skúsenosťami v oblasti rozpočtovania najmä vodohospodárskych stavieb a tvorby zjednodušenej projektovej dokumentácie pre opravy a údržbu vodohospodárskych stavieb.
+    </p>
+
+    <div class="services">
+
+      <div class="service">
+        <strong>Moja prax</strong>
+        Roky skúseností s orientačnými rozpočtami, výkazmi výmer a technickými podkladmi.
+      </div>
+
+      <div class="service">
+        <strong>Spolupráca</strong>
+        Pracujem s projektantmi, stavebnými firmami a investormi.
+      </div>
+
+      <div class="service">
+        <strong>Presnosť</strong>
+        Dbám na detail, technickú správnosť a transparentnosť výkazu výmer.
+      </div>
+
     </div>
   </div>
 </section>
 
 <footer class="footer">
-  <p>© <span id="year"></span> Costing.sk</p>
+  © 2025 Costing.sk
 </footer>
 
 <script>
@@ -51,7 +63,6 @@
   toggle.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
   });
-  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
