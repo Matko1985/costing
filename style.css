@@ -55,7 +55,6 @@ body {
   color: #0077cc;
 }
 
-/* Menu */
 .menu {
   display: flex;
   gap: 1.5rem;
@@ -73,7 +72,6 @@ body {
   color: #0077cc;
 }
 
-/* Tlačidlo Kontakt */
 .btn {
   background: #0077cc;
   color: #fff !important;
@@ -87,6 +85,21 @@ body {
   background: #005fa3;
 }
 
+.btn--ghost {
+  background: transparent;
+  border: 2px solid #0077cc;
+  color: #0077cc !important;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn--ghost:hover {
+  background: #0077cc;
+  color: #fff !important;
+}
+
 /* Mobilné menu */
 .menu-toggle {
   display: none;
@@ -97,83 +110,87 @@ body {
 }
 
 /* --------------------------------------------------
-   SEKCIÁ
+   HERO SEKCIÁ
 -------------------------------------------------- */
 
-.section {
-  padding: 4rem 0;
+.hero {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #222;
+.hero__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
 
-.section__lead {
-  margin-top: 0.5rem;
+.hero__text h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.hero__text p {
+  font-size: 1.15rem;
   color: #555;
-  font-size: 1.1rem;
   margin-bottom: 2rem;
 }
 
+.hero__visual img {
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
 /* --------------------------------------------------
-   REFERENCIE – GRID KARTY
+   TRUST BAR
 -------------------------------------------------- */
 
-.refs {
+.trust {
+  padding: 3rem 0;
+  background: #ffffff;
+  border-top: 1px solid #e5e5e5;
+}
+
+.trust__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
 }
 
-.ref {
-  background: #fff;
-  border: 1px solid #e5e5e5;
-  padding: 1.6rem 1.8rem;
+.trust__item {
+  background: #f4f8ff;
+  padding: 1.2rem 1.4rem;
   border-radius: 10px;
+  border: 1px solid #dce8ff;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
 }
 
-.ref:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-
-.ref strong {
-  font-size: 1.15rem;
-  color: #222;
-  display: block;
-  margin-bottom: 0.6rem;
-}
-
-.ref::before {
-  content: "📄";
-  position: absolute;
-  top: 1.2rem;
-  right: 1.2rem;
+.trust__item .icon {
   font-size: 1.4rem;
-  opacity: 0.3;
 }
 
 /* --------------------------------------------------
-   KONTAKT
+   ANIMÁCIA
 -------------------------------------------------- */
 
-.contact p {
-  margin-bottom: 1rem;
-  font-size: 1.05rem;
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
 }
 
-.contact a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  text-decoration: underline;
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* --------------------------------------------------
@@ -192,6 +209,11 @@ body {
 -------------------------------------------------- */
 
 @media (max-width: 768px) {
+  .hero__content {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
@@ -208,4 +230,3 @@ body {
     display: block;
   }
 }
-body { background: #ffdddd !important; }
