@@ -174,6 +174,72 @@ body {
 }
 
 /* --------------------------------------------------
+   SEKCIÁ SLUŽBY, O MNE, REFERENCIE
+-------------------------------------------------- */
+
+.section {
+  padding: 4rem 0;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+.section__lead {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.refs, .services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.ref, .service {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 1.6rem 1.8rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ref:hover, .service:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+.ref strong, .service strong {
+  font-size: 1.15rem;
+  color: #222;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+/* --------------------------------------------------
+   KONTAKT
+-------------------------------------------------- */
+
+.contact p {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------
    ANIMÁCIA
 -------------------------------------------------- */
 
